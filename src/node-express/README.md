@@ -104,3 +104,22 @@ Let's have a quick look at an example showing why asynchronous programming is im
 - https://eloquentjavascript.net/11_async.html
 - https://www.youtube.com/watch?v=8aGhZQkoFbQ
 - https://nodejs.org/en/docs/guides/dont-block-the-event-loop/
+
+## Environment variables
+
+Decoupling configuration from the application.
+
+Environment variables are those whose value is set outside the program, likely through configuration files or provided at runtime while deploying the application. An environment variable is made up of a key=value pair and any number can be created and used within a programn.
+
+For example, at the time of deploying our app in production, we would like to set the environment variable NODE_ENV to __production__ which is going to bring in some additional benefits to our app such as less verbose error messages. Similarly, we may want to connect to different databases for different environments(development, staging, test, or production) and thus we can set different DB endpoints for different environments using environment variables.
+
+We use environment variables in our NodeJS application using __process.env__ object. And these variables can be passed in different ways such as:
+
+- Command Line: `PORT=3000 node server.js` will set environment variable PORT as 3000 which will be then accessible inside our app.
+- **.env** file: We can consolidate all our configurations in an environment file which can be added into root of our app. But we need to make sure that this file is not added to source-control and is kept away using `.gitignore`.
+
+## Middlewares
+
+## Routing
+
+## Pagination
