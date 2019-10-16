@@ -79,3 +79,28 @@ app.listen(port, () => {
 
 // Spin this server and try accessing http://localhost:3000/api to interact with this endpoint
 ```
+
+## Asynchronocity in NodeJS
+
+JavaScript as we know is a single threaded language. This means that it can only do one task at a time. While that task being is executed, main thread remains busy. This is in comparison to other languages such as Java which are multi-threaded languages where a task can be subdivided and distributed amongs threads while keeping the main thread free.
+
+Since our main thread is kept busy while executing a task, it is not considered a good practice to execute long operations like reading from a big file, waiting for a server to respond to an API request or even to execute a big loop.
+
+This is where asynchronous programming in JavaScript comes in handy. All tasks which may have a long execution time are executed in parallel off from the main thread. These tasks then communicate with the main thread using **Event loop**.
+
+Asynchronous programming in both JavaScript runtimes, browsers and NodeJS, works the same way(minor differences would be in how event loop works but the overall concept is same). They both make operations which may take a while to complete asynchronous.
+
+This is implemented using various techniques such as:
+
+- callbacks
+- promises
+- async/await
+- generators
+
+Let's have a quick look at an example showing why asynchronous programming is important in NodeJS.
+
+**Reference:**
+
+- https://eloquentjavascript.net/11_async.html
+- https://www.youtube.com/watch?v=8aGhZQkoFbQ
+- https://nodejs.org/en/docs/guides/dont-block-the-event-loop/

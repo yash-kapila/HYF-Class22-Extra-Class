@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "multi-purpose-app": "node multi-purpose-app/index.js"
+    "multi-purpose-app": "node multi-purpose-app/index.js",
+    "sync-async-app": "node sync-async-app/index.js"
   },
   "repository": {
     "type": "git",
