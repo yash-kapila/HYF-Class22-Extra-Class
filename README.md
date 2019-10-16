@@ -5,8 +5,8 @@ HYF Class22 Extra Class
 ## Topics
 
 - Networking(TCP/IP, addresses, ports and HTTP Messages)
-- Build a web server
-- APIs and endpoints
+- Web server, serving static files, APIs and endpoints
+- Asynchroncity in NodeJS & environment variables
 - Routing
-- Serving static files
-- Middleware and pagination
+- Middlewares
+- Pagination

@@ -16,6 +16,11 @@ Have a look inside the **multi-purpose-app** to see how we can implement a simil
 
 **Note:** Although possible to combine different apps in one, following the principle of separation of concerns, it is better to keep apps serving static content and those serving APIs separate.
 
+**References:**
+
+- https://expressjs.com/en/starter/static-files.html
+- https://stackabuse.com/node-js-express-examples-rendered-rest-and-static-websites/
+
 ## Application Programming Interface(API)
 
 An API as the name suggests is an interface which we can connect/use to in order to establish a connection between our application and the system/application/library serving us those APIs.
