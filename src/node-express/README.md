@@ -120,6 +120,28 @@ We use environment variables in our NodeJS application using __process.env__ obj
 
 ## Middlewares
 
+Middleware as the name might suggest are functions that lie in the middle of a flowwhen it reaches the server(be it request or response). They are nothing but functions which have access to the request and response object and a __next__ function in the app's cycle. __next__ is again a function which, when invoked, executes the next middleware function registered.
+
+Some of the basic functions which a middleware function does:
+
+- Execute any piece of code
+- Modify request or response object
+- End the request/response cycle
+- Call the next middleware function
+
+If a middleware function doesn't end the request/response cycle, then it must call the __next__ function to pass control to the next middleware. Otherwise, the request would be left hanging.
+
+Common use cases of a midleware function would be:
+
+- **Guard routes:** For protected endpoints i.e for which a user must be authenticated, check whether the incoming request is coming from an authenticated source.
+- **Logging:** We would like to keep a log of all incoming requests.
+- **Error handling:** Middleware functions can be used for a common way of dealing with errors instead of doing it on every route.
+
+**Reference:**
+
+- https://expressjs.com/en/guide/writing-middleware.html
+- https://expressjs.com/en/guide/using-middleware.html
+
 ## Routing
 
 ## Pagination
