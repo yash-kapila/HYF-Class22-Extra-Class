@@ -141,7 +141,3 @@ Common use cases of a midleware function would be:
 
 - https://expressjs.com/en/guide/writing-middleware.html
 - https://expressjs.com/en/guide/using-middleware.html
-
-## Routing
-
-## Pagination
